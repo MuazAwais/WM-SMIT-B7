@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        header {
+            text-align: end;
+            color: red;
+            text-decoration: underline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        main{
+            background-color: rgba(169, 169, 169, 0.24);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Style the form */
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the form groups */
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+        }
+
+        /* Style the form labels */
+        label {
+            width: 25%;
+            text-align: right;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+        /* Style the form inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: 75%;
+            margin: 20px ;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            line-break: anywhere;
+            
+        }
+
+        /* Style the form submit button */
+        button {
+            width: 70%;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 1cm ;
+            margin-left: 4cm;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            
+        }
+
+        /* Style the form radio buttons */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Style the form textarea */
+        textarea {
+            height: 80px;
+        }
+        input[type="checkbox"]{
+            margin-inline-start: 4cm;
+        }
+
+        /* Style the form select element */
+        select {
+            width: 75%;
+            padding: 5px;
+            margin-inline-start: 20px;
+            border: 1px solid #ccc;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <p id="Student">Student Registaration Form</p>
+    </header>
+    <main>
+
+
+        <label for="First name">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your first name"><br>
+        <label for="Lastname">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter yout last name"><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="It should contain @..">
+        <br>
+        <label for="mobile no">Mobile:</label>
+        <input type="number" name="mobile" id="mobile" placeholder="only 10 digits are allowed">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="mgender">
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="wgender">
+        <label for="female">Female</label>
+        <br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date of birth" id=" date of birth">
+        <br>
+        <label for="Address">Address:</label>
+        <textarea name="address" id="Address" cols="30" rows="10"></textarea>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <br>
+        <label for="area pin">Area Pin:</label>
+        <input type="text" name="areapin" id="areapin">
+        <br>
+        <label for="State">State:</label>
+        <input type="text" name="State" id="State">
+        <br>
+        <label for="qualification">Qualification:</label>
+        <select name="qualification" id="qualification">
+            <option value="select">Select Qualification</option>
+            <option value="Matric">Matric</option>
+            <option value="intermadate">Intermadate</option>
+            <option value="graduation">Graduation</option>
+        </select>
+        <br>
+        <label for="specialization">Specialization:</label>
+        <input type="checkbox" name="computer science" id="comsci">
+        <label for="Computer Science">Computer Science</label><br>
+        <input type="checkbox" name="information technology" id="info">
+        <label for="Information Technology">Information Technology</label><br>
+        <input type="checkbox" name="computer architecture" id="comarci">
+        <label for="computer architecture">Computer Architecture</label><br>
+        <input type="checkbox" name="tele communication" id="telecom">
+        <label for="tele communication">Tele Communication</label><br>
+        <label for="password">Password:</label>
+        <input type="password" name="pass" id="passkey">
+        <br>
+        <button id="registered">Registered</button>
+
+    </main>
+
+</body>
+
+</html>
