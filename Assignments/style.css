@@ -1,51 +1,81 @@
-h1{font-style: italic;
-text-align: center;
-color: rgb(0, 0, 0);
-font-size:350%;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("pasta.jpg");
+  
+}
 
-}
-body{
-  background-color: rgba(88, 201, 135, 0.308);
-}
-#main{
+header {
+  color: #ddd;
+  padding: 20px;
+  display: inline;
   text-align: center;
+}
 
+h1 {
+  font-size: 2.5rem;
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
 }
-a{
-  color: black;
+
+nav {
+  float: right;
+  color: #f1f1f1;
 }
-div{
-    text-align: center;
-}
-img{
-    width:400;
-}
-h3{
-    text-decoration: underline;
-}
-table{
-    text-align: center;
-}
-table {
-    width: 100%;
-    text-align: center;}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
   
-  th, td {
-    text-align: center;
-  }
-  
-  th {
-    text-align: center;
-  }
-  label {
-    font-weight: bold;
-  }
-  input, textarea {
-    width: 300px;
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-  
+}
+
+nav a:hover {
+  background-color: #f5aaaa;
+}
+
+main {
+  padding: 20px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.food-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-images img {
+  margin-right: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+footer {
+  color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  display: inline;
+}
